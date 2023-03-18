@@ -10,7 +10,7 @@
 <script>
 	function password() {		
 		var testV = 1;//计数器，记录密码错误次数
-		var psw = prompt("网站全新升级！请输入密码：(没密码？访问：heartmv.com)","");
+		var psw = prompt("请输入密码：","");
 		while (testV < 3) {
 			if (!psw){
 				history.go(-1);//密码错误返回上一页
@@ -20,7 +20,7 @@
 				break;
 			}
 			testV+=1;
-			psw=prompt("网站全新升级！请输入密码：(没密码？访问：heartmv.com)","");
+			psw=prompt("请输入密码：","");
 		}
 		if (psw!=xx && testV ==3){
 			alert("错错错！！！，请刷新重新输入密码");//密码输入错误达到3次
