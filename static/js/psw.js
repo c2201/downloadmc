@@ -1,1 +1,2 @@
-var psw1 = "627480";
+// JavaScript Document
+var psw1="627480";
