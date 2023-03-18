@@ -9,21 +9,21 @@
 <script src="/static/js/psw.js"></script>
 <script>
 	function password() {		
-		var testV = 1;//计数器，记录密码错误次数
+		var testV = 1;
 		var psw = prompt("请输入密码：","");
 		while (testV < 3) {
 			if (!psw){
-				history.go(-1);//密码错误返回上一页
+				history.go(-1);
 			}
-			if (psw == psw1) {
-				location.href="index2.html";//密码正确，跳到指定页面
+			if (psw == "123456") {
+				location.href="index2.html";
 				break;
 			}
 			testV+=1;
 			psw=prompt("请输入密码：","");
 		}
 		if (psw!=psw1 && testV ==3){
-			alert("错错错！！！，请刷新重新输入密码");//密码输入错误达到3次
+			alert("错错错！！！，请刷新重新输入密码");
 		}
 			return " ";
 	}
